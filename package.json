@@ -4,16 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx webpack serve --mode=development",
+    "build": "npx webpack --mode=production",
+    "build:dev": "webpack"
   },
   "author": "tanaka-k",
   "license": "UNLICENSED",
   "private": true,
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.4",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
+    "image-webpack-loader": "^7.0.1",
     "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^6.0.0",
     "pug-html-loader": "^1.1.5",
